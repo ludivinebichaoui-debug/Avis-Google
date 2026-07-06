@@ -1,0 +1,41 @@
+.hidden-step {
+    display: none !important;
+}
+
+.instruction-box {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 25px 20px;
+    border-radius: 14px;
+    border: 1px dashed rgba(212, 175, 55, 0.6);
+    margin-top: 10px;
+}
+
+.instruction-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.btn-action-unique {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-action-unique:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-2px);
+}
