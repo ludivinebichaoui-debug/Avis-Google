@@ -39,3 +39,24 @@
     color: #000;
     transform: translateY(-2px);
 }
+.main-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:18px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    background:#111;
+    color:white;
+    transition:.3s;
+}
+
+.main-btn:hover{
+    transform:scale(1.05);
+}
+
+.gold{
+    background:linear-gradient(135deg,#d4af37,#f8e28b);
+    color:#222;
+}
