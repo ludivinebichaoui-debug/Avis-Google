@@ -1,7 +1,7 @@
 function startFlow() {
 
     // Ouvre Google Avis dans un nouvel onglet
-    window.open("TON_LIEN_GOOGLE_AVIS", "_blank");
+    window.open("https://ludivinebichaoui-debug.github.io/Avis-Google/", "_blank");
 
     // Passe directement à la roue
     document.getElementById('step-avis').classList.add('hidden-step');
