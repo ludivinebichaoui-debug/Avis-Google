@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roue Privilège - Excel Coiffure Carcassonne</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roue Privilège - Excel Coiffure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="background-overlay"></div>
+<div class="background-overlay"></div>
 
-    <div class="container">
-        
-        <div id="step-avis">
-            <h1>Excel Coiffure ✨</h1>
-            <p class="subtitle">Pont Rouge - Carcassonne</p>
-            
-            <div class="instruction-box">
-                <p>Pour vous remercier de votre visite, laissez-nous un avis sur Google et tentez instantanément votre chance à notre Roue des Privilèges !</p>
-                
-                <a href="https://www.google.com/search?q=Excel+Coiffure+Pont+Rouge+Carcassonne#lrd=0x12ae2c396df560db:0xc4ff6ebf4d7b21dc,3" target="_blank" class="btn-action-unique" onclick="startFlow()">
-                    ⭐ LAISSER UN AVIS & OUVRIR LA ROUE 🎁
-                </a>
-            </div>
-            <p style="font-size: 11px; color: #666; font-style: italic; margin-top: 15px;">La roue des cadeaux se débloquera juste après votre clic.</p>
-        </div>
+<div class="container">
 
-        <div id="step-roue" class="hidden-step">
-            <h1>Bonne chance ! 🍀</h1>
-            <p class="subtitle">Tournez la roue pour découvrir votre privilège</p>
+    <!-- Écran Avis -->
+    <div id="step-avis">
 
-            <div class="wheel-box">
-                <div class="pointer"></div>
-                <canvas id="wheelCanvas" width="600" height="600"></canvas>
-                <button class="spin-btn" onclick="spin()">LANCER</button>
-            </div>
+        <h1>Excel Coiffure ✨</h1>
 
-            <div id="result-box" class="hidden">
-                <div class="result-content">
-                    <span class="result-icon">✨</span>
-                    <p id="result-text"></p>
-                </div>
-            </div>
+        <p class="subtitle">
+            Pont Rouge - Carcassonne
+        </p>
+
+        <div class="instruction-box">
+
+            <p>
+                Merci pour votre visite ❤️<br><br>
+
+                Laissez-nous un avis Google puis revenez sur cette page pour découvrir votre privilège.
+            </p>
+
+            <a
+                class="btn-action"
+                href="https://www.google.com/search?q=Excel+Coiffure+Pont+Rouge+Carcassonne#lrd=0x12ae2c396df560db:0xc4ff6ebf4d7b21dc,3"
+                target="_blank"
+                onclick="startFlow()">
+
+                ⭐ LAISSER UN AVIS & DÉBLOQUER LA ROUE 🎁
+
+            </a>
+
         </div>
 
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
-<div class="container">
+    <!-- Roue -->
 
-    <h1>Excel Coiffure ✨</h1>
-    <p class="subtitle">Pont Rouge - Carcassonne</p>
+    <div id="step-roue" class="hidden-step">
 
-    <div class="instruction-box">
+        <h1>Bonne chance 🍀</h1>
 
-        <p>
-            Merci pour votre visite ❤️<br><br>
-            Laissez-nous un avis Google puis revenez ici pour découvrir votre cadeau.
+        <p class="subtitle">
+            Tournez la roue pour découvrir votre privilège.
         </p>
 
-        <a id="googleBtn"
-           class="main-btn"
-           href="TON_LIEN_DIRECT_AVIS_GOOGLE"
-           target="_blank"
-           onclick="showWheelButton()">
-            ⭐ Laisser un avis Google
-        </a>
+        <div class="wheel-box">
 
-        <div id="waiting" style="display:none;margin-top:20px;">
-            ⏳ Revenez ici après avoir publié votre avis...
+            <div class="pointer"></div>
+
+            <canvas
+                id="wheelCanvas"
+                width="600"
+                height="600">
+            </canvas>
+
+            <button
+                class="spin-btn"
+                onclick="spin()">
+
+                LANCER
+
+            </button>
+
         </div>
 
-        <a id="wheelBtn"
-           class="main-btn gold"
-           href="https://ludivinebichaoui-debug.github.io/Roue-salon-/"
-           style="display:none;">
-            🎁 J'ai laissé mon avis → Tourner la roue
-        </a>
+        <div
+            id="result-box"
+            class="hidden">
+
+            <div class="result-content">
+
+                <span class="result-icon">✨</span>
+
+                <p id="result-text"></p>
+
+            </div>
+
+        </div>
 
     </div>
 
 </div>
 
+<script src="script.js"></script>
+
+</body>
+</html>
